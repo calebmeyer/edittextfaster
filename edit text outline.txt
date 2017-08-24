@@ -3,8 +3,8 @@ Edit Text Outline
   - The problem: facility with text
   - The other problem: My first vi experience
 - talk
-  - modal editing
-  - key sequences
+  - modal editing: you already do this
+  - key sequences/chords
   - motions
   - commands
   - the true power/lesson of vi/vim
