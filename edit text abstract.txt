@@ -1,0 +1,17 @@
+Edit text, faster
+Difficulty 	Beginner
+Track 	Bleeding Edge
+Description
+
+Vi has been around over 40 years now, and Vim for over 25. They're ancient, by software standards, but people still use and love them the world round.
+
+However, my first experience with vim, like many people's first experiences, was terrible. I typed vi hello.java into my university's aging red hat machine, then tried to type out a program from a sheet of paper. It was horrible, even with my instructor's guidance surrounding changing modes and saving and quitting the program. I quickly abandoned vim, opened gedit, and didn't look back.
+
+In this talk, I will share my story with you, how I was slowly converted from an outright opponent of the vim way into a skeptic, then a believer. I will show you how to avoid the mistakes I made when I learned vim, and how you can integrate vim commands into whatever text editor you are already using today. We'll cover a few basic commands, and I'll show you how to help yourself learn more.
+
+When you leave this talk, I hope you take away a desire, an itch, an excitement to learn about this powerful productivity tool. You'll also have a set of great references for slowly integrating vim commands into your daily workflows.
+Target Audience
+
+If you have never heard of vim, or had a similarly poor experience to my first one, I encourage you to come. If you have a highly customized emacs setup and can already edit text faster than your peers, I encourage you to come, and see the other side. If you are already a vim diehard and have the browser extensions, you can still come just to hear my story.
+
+If you spend more of your day in a browser, email client, or meetings than writing code or text, then you won't get much from this talk.
