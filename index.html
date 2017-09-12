@@ -30,6 +30,18 @@
 				</section>
 
 				<section>
+					<h1>Key Sequences and Chords</h1>
+					<aside class="notes">
+						<ul>
+							<li>A bit of terminology before we start</li>
+							<li>A key sequence is a set of keys pressed one after the other</li>
+							<li>You can also press more than one key at once, such as when you copy or paste</li>
+							<li>That's a key chord</li>
+						</ul>
+					</aside>
+				</section>
+
+				<section>
 					<h1>The Problem</h1>
 					<h2>(being and feeling slow)</h2>
 					<aside class="notes">
@@ -44,19 +56,6 @@
 				</section>
 
 				<section>
-					<h1>Key Sequences and Chords</h1>
-					<aside class="notes">
-						<ul>
-							<li>A bit of terminology</li>
-							<li>That long string of things I had to do to move a line?</li>
-							<li>That's a sequence of keys, pressed one after the other</li>
-							<li>You can also press more than one key at once, such as when you copy or paste</li>
-							<li>That's a key chord</li>
-						</ul>
-					</aside>
-				</section>
-
-				<section>
 					<h1>There must be a better way!</h1>
 				</section>
 
@@ -65,7 +64,7 @@
 				</section>
 
 				<section>
-					<h3>My First vi Experience</h3>
+					<h3>My First Vim Experience</h3>
 					<img src="images/vi.png" alt="first vi">
 					<aside class="notes">
 						<ul>
@@ -78,13 +77,22 @@
 				</section>
 
 				<section>
+					<h1>So what went wrong here?</h1>
+					<aside class="notes">
+						<ul>
+							<li>My problem was I didn't understand that vim was a modal editor</li>
+						</ul>
+					</aside>
+				</section>
+
+				<section>
 					<h1>Modal Editing</h1>
 					<h2>&nbsp;</h2>
 					<aside class="notes">
 						<ul>
 							<li>What is it?</li>
 							<li>Editing with different modes</li>
-							<li>Vim is most famous for it, but most editors have it.</li>
+							<li>Vim is most famous for it, but most editors have modes.</li>
 						</ul>
 					</aside>
 				</section>
@@ -140,12 +148,12 @@
 					<h3>(there are more)</h3>
 					<h3>&nbsp;</h3>
 					<aside class="notes">
-					  But we won't talk about them here
+					  But we don't have time to talk about them here
 					</aside>
 				</section>
 
 				<section>
-					<h1>Vim: Motions</h1>
+					<h1>Command Mode: Motions</h1>
 					<h4><code>h(left) j(down) k(up) l(right)</code></h4>
 					<img src="images/vim hjkl.jpg" alt="old keyboard">
 					<br>
@@ -153,56 +161,56 @@
 				</section>
 
 				<section>
-					<h1>Vim: Motions</h1>
+					<h1>Command Mode: Motions</h1>
 					<h4><code>h(left) j(down) k(up) l(right)</code></h4>
 					<h4><code>w(ord forward)<br> e(nd of word)<br> b(ack a word)</code></h4>
 					<h4>&nbsp;<br>&nbsp;</h4>
 				</section>
 
 				<section>
-					<h1>Vim: Motions</h1>
+					<h1>Command Mode: Motions</h1>
 					<h4><code>h(left) j(down) k(up) l(right)</code></h4>
 					<h4><code>w(ord forward)<br> e(nd of word)<br> b(ack a word)</code></h4>
 					<h4><code>t(il some character)<br> f(ind some character)</code></h4>
 				</section>
 
 				<section>
-					<h1>Vim: Commands</h1>
+					<h1>Command Mode: Operators</h1>
 					<h3><code>Ctrl-c</code></h3>
 					<h3>&nbsp;</h3>
 					<h3>&nbsp;</h3>
 				</section>
 
 				<section>
-					<h1>Vim: Commands</h1>
+					<h1>Command Mode: Operators</h1>
 					<h3><code>Ctrl-c → y(ank)</code></h3>
 					<h3>&nbsp;</h3>
 					<h3>&nbsp;</h3>
 				</section>
 
 				<section>
-					<h1>Vim: Commands</h1>
+					<h1>Command Mode: Operators</h1>
 					<h3><code>Ctrl-c → y(ank)</code></h3>
 					<h3><code>Ctrl-x</code></h3>
 					<h3>&nbsp;</h3>
 				</section>
 
 				<section>
-					<h1>Vim: Commands</h1>
+					<h1>Command Mode: Operators</h1>
 					<h3><code>Ctrl-c → y(ank)</code></h3>
 					<h3><code>Ctrl-x → d(elete)</code></h3>
 					<h3>&nbsp;</h3>
 				</section>
 
 				<section>
-					<h1>Vim: Commands</h1>
+					<h1>Command Mode: Operators</h1>
 					<h3><code>Ctrl-c → y(ank)</code></h3>
 					<h3><code>Ctrl-x → d(elete)</code></h3>
 					<h3><code>Ctrl-v</code></h3>
 				</section>
 
 				<section>
-					<h1>Vim: Commands</h1>
+					<h1>Command Mode: Operators</h1>
 					<h3><code>Ctrl-c → y(ank)</code></h3>
 					<h3><code>Ctrl-x → d(elete)</code></h3>
 					<h3><code>Ctrl-v → p(aste)</code></h3>
@@ -268,26 +276,31 @@
 				<section>
 					<h1>Wait a minute...</h1>
 					<h3>d(elete)<br>&nbsp;</h3>
+					<img src="images/operator pending d.png" alt="operator pending">
 				</section>
 
 				<section>
 					<h1>Wait a minute...</h1>
 					<h3>d(elete) d(whole line)<br>&nbsp;</h3>
+					<img src="images/delete line d.png" alt="delete line">
 				</section>
 
 				<section>
 					<h1>Wait a minute...</h1>
 					<h3>d(elete) d(whole line) k(move up)<br>&nbsp;</h3>
+					<img src="images/up k.png" alt="move up">
 				</section>
 
 				<section>
 					<h1>Wait a minute...</h1>
 					<h3>d(elete) d(whole line) k(move up) k(move up)</h3>
+					<img src="images/up k 2.png" alt="move up again">
 				</section>
 
 				<section>
 					<h1>Wait a minute...</h1>
 					<h3>d(elete) d(whole line) k(move up) k(move up) p(aste)</h3>
+					<img src="images/paste p.png" alt="paste">
 				</section>
 
 				<section>
@@ -323,6 +336,12 @@
 					<h3>Vim is awesome</h3>
 					<h3>&nbsp;</h3>
 					<h3>&nbsp;</h3>
+					<aside class="notes">
+						<ul>
+							<li>Vim lets you do things very quickly</li>
+							<li>the commands are mnemonic</li>
+						</ul>
+					</aside>
 				</section>
 
 				<section>
@@ -330,6 +349,11 @@
 					<h3>Vim is awesome</h3>
 					<h3>I've only scratched the surface</h3>
 					<h3>&nbsp;</h3>
+					<aside class="notes">
+						<ul>
+							<li>Every key on the keyboard does something in command mode</li>
+						</ul>
+					</aside>
 				</section>
 
 				<section>
@@ -337,6 +361,15 @@
 					<h3>Vim is awesome</h3>
 					<h3>I've only scratched the surface</h3>
 					<h3>You can keep using your editor!</h3>
+					<aside class="notes">
+						<ul>
+							<li>I love the vim way, but I can't stand terminal vim for real editing</li>
+							<li>I learned to use vim by turning on vintage mode in Sublime Text</li>
+							<li>These days I use atom, and a package called vim mode plus</li>
+							<li>Visual Studio, Visual Studio Code, Eclipse, and IntelliJ IDEA all have vim modes</li>
+							<li>Almost every editor does</li>
+						</ul>
+					</aside>
 				</section>
 
 				<section>
@@ -348,6 +381,12 @@
 					<h4>Cheat sheets:</h4>
 					<a href="http://www.viemu.com/a_vi_vim_graphical_cheat_sheet_tutorial.html"><img src="images/cheat sheet.png" alt="cheat sheet"></a>
 				</section>
+				<aside class="notes">
+					<ul>
+						<li>These cheat sheets are fantastic. They go through a progression of keys and teach you a few at a time.</li>
+						<li>If you're interested and want to learn more, please find me after this.</li>
+					</ul>
+				</aside>
 			</div>
 		</div>
 
